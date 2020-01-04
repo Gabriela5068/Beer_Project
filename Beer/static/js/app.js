@@ -15,6 +15,10 @@ $('.mfeel').on('change', function () {
     $('.mfeel').not(this).prop('checked', false);
 });
 
+$('.color').on('change', function () {
+    $('.color').not(this).prop('checked', false);
+});
+
 //Submit Button
 $("#search").click(function () {
 
