@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 id,ibu_category_nbr,srm_category_nbr,abv_category_nbr,attenuation_category_nbr,outcome
 1,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
 2,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
@@ -324,3 +325,331 @@ id,ibu_category_nbr,srm_category_nbr,abv_category_nbr,attenuation_category_nbr,o
 323,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
 324,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
 325,2,2,1,3,IBU Medium Straw ABV Low Atten High
+=======
+id,ibu_category_nbr,srm_category_nbr,abv_category_nbr,attenuation_category_nbr,outcome
+1,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+2,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+3,1,3,1,3,IBU Low Pale Gold ABV Low Atten High
+4,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+5,3,4,1,1,IBU High Deep Gold ABV Low Atten Low
+6,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+7,2,11,2,3,IBU Medium Black ABV Medium Atten High
+8,3,4,1,2,IBU High Deep Gold ABV Low Atten Medium
+9,2,11,2,3,IBU Medium Black ABV Medium Atten High
+10,3,7,1,2,IBU High Deep Amber ABV Low Atten Medium
+11,2,11,1,2,IBU Medium Black ABV Low Atten Medium
+12,3,11,1,2,IBU High Black ABV Low Atten Medium
+13,3,11,1,2,IBU High Black ABV Low Atten Medium
+14,3,10,1,2,IBU High Deep Brown ABV Low Atten Medium
+15,3,8,2,3,IBU High Brown ABV Medium Atten High
+16,3,11,1,2,IBU High Black ABV Low Atten Medium
+17,3,10,2,3,IBU High Deep Brown ABV Medium Atten High
+18,3,7,1,2,IBU High Deep Amber ABV Low Atten Medium
+19,3,12,1,3,IBU High Undefined ABV Low Atten High
+20,2,7,2,3,IBU Medium Deep Amber ABV Medium Atten High
+21,2,12,1,2,IBU Medium Amber Brown ABV Low Atten Medium
+22,3,8,2,1,IBU High Brown ABV Medium Atten Low
+23,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+24,3,12,3,3,IBU High Undefined ABV High Atten High
+25,3,3,1,2,IBU High Pale Gold ABV Low Atten Medium
+26,2,10,1,1,IBU Medium Deep Brown ABV Low Atten Low
+27,3,11,2,3,IBU High Black ABV Medium Atten High
+28,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+29,3,11,1,2,IBU High Black ABV Low Atten Medium
+30,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+31,3,12,1,1,IBU High Amber Brown ABV Low Atten Low
+32,3,11,2,2,IBU High Black ABV Medium Atten Medium
+33,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+34,2,9,1,3,IBU Medium Ruby Brown ABV Low Atten High
+35,1,12,1,3,IBU Low Undefined ABV Low Atten High
+36,3,10,2,3,IBU High Deep Brown ABV Medium Atten High
+37,3,8,2,2,IBU High Brown ABV Medium Atten Medium
+38,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+39,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+40,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+41,3,11,2,2,IBU High Black ABV Medium Atten Medium
+42,3,8,2,2,IBU High Brown ABV Medium Atten Medium
+43,1,4,1,2,IBU Low Deep Gold ABV Low Atten Medium
+44,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+45,3,10,1,2,IBU High Deep Brown ABV Low Atten Medium
+46,1,6,3,3,IBU Low Medium Amber ABV High Atten High
+47,3,11,2,2,IBU High Black ABV Medium Atten Medium
+48,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+49,2,6,2,3,IBU Medium Medium Amber ABV Medium Atten High
+50,2,11,2,3,IBU Medium Black ABV Medium Atten High
+51,1,5,1,3,IBU Low Pale Amber ABV Low Atten High
+52,3,11,2,3,IBU High Black ABV Medium Atten High
+53,2,8,1,2,IBU Medium Brown ABV Low Atten Medium
+54,3,10,1,3,IBU High Deep Brown ABV Low Atten High
+55,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+56,3,11,2,2,IBU High Black ABV Medium Atten Medium
+57,3,6,2,3,IBU High Medium Amber ABV Medium Atten High
+58,3,11,2,2,IBU High Black ABV Medium Atten Medium
+59,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+60,2,9,1,2,IBU Medium Ruby Brown ABV Low Atten Medium
+61,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+62,3,7,2,3,IBU High Deep Amber ABV Medium Atten High
+63,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+64,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+65,3,11,1,2,IBU High Black ABV Low Atten Medium
+66,3,11,2,3,IBU High Black ABV Medium Atten High
+67,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
+68,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+69,3,12,2,3,IBU High Amber Brown ABV Medium Atten High
+70,3,11,2,2,IBU High Black ABV Medium Atten Medium
+71,2,9,1,2,IBU Medium Ruby Brown ABV Low Atten Medium
+72,1,4,1,2,IBU Low Deep Gold ABV Low Atten Medium
+73,3,11,2,2,IBU High Black ABV Medium Atten Medium
+74,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+75,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+76,3,8,1,2,IBU High Brown ABV Low Atten Medium
+77,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+78,3,11,2,2,IBU High Black ABV Medium Atten Medium
+79,3,10,1,2,IBU High Deep Brown ABV Low Atten Medium
+80,3,11,2,3,IBU High Black ABV Medium Atten High
+81,2,4,1,2,IBU Medium Deep Gold ABV Low Atten Medium
+82,3,7,1,3,IBU High Deep Amber ABV Low Atten High
+83,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+84,1,1,1,3,"IBU Low Pale Lager, Pilsner, Witbier, Berliner Weisse ABV Low Atten High"
+85,2,9,1,2,IBU Medium Ruby Brown ABV Low Atten Medium
+86,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+87,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+88,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+89,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+90,3,11,2,2,IBU High Black ABV Medium Atten Medium
+91,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+92,3,11,2,2,IBU High Black ABV Medium Atten Medium
+93,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+94,3,5,2,3,IBU High Pale Amber ABV Medium Atten High
+95,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+96,1,11,2,3,IBU Low Black ABV Medium Atten High
+97,3,5,3,3,IBU High Pale Amber ABV High Atten High
+98,1,12,1,2,IBU Low Amber Brown ABV Low Atten Medium
+99,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+100,3,7,1,3,IBU High Deep Amber ABV Low Atten High
+101,3,11,1,2,IBU High Black ABV Low Atten Medium
+102,2,4,2,3,IBU Medium Deep Gold ABV Medium Atten High
+103,3,7,2,3,IBU High Deep Amber ABV Medium Atten High
+104,3,8,1,3,IBU High Brown ABV Low Atten High
+105,3,11,1,3,IBU High Black ABV Low Atten High
+106,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+107,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+108,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+109,3,12,2,2,IBU High Amber Brown ABV Medium Atten Medium
+110,2,10,1,2,IBU Medium Deep Brown ABV Low Atten Medium
+111,3,7,1,2,IBU High Deep Amber ABV Low Atten Medium
+112,1,3,1,2,IBU Low Pale Gold ABV Low Atten Medium
+113,3,10,1,3,IBU High Deep Brown ABV Low Atten High
+114,3,11,1,2,IBU High Black ABV Low Atten Medium
+115,3,3,1,3,IBU High Pale Gold ABV Low Atten High
+116,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+117,3,7,1,2,IBU High Deep Amber ABV Low Atten Medium
+118,2,11,1,2,IBU Medium Black ABV Low Atten Medium
+119,2,11,1,2,IBU Medium Black ABV Low Atten Medium
+120,3,11,2,2,IBU High Black ABV Medium Atten Medium
+121,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+122,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+123,3,9,1,2,IBU High Ruby Brown ABV Low Atten Medium
+124,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+125,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+126,3,11,1,2,IBU High Black ABV Low Atten Medium
+127,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+128,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+129,3,11,2,2,IBU High Black ABV Medium Atten Medium
+130,1,12,1,3,IBU Low Undefined ABV Low Atten High
+131,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+132,2,10,1,2,IBU Medium Deep Brown ABV Low Atten Medium
+133,3,11,1,3,IBU High Black ABV Low Atten High
+134,3,11,1,2,IBU High Black ABV Low Atten Medium
+135,2,6,1,2,IBU Medium Medium Amber ABV Low Atten Medium
+136,3,6,2,3,IBU High Medium Amber ABV Medium Atten High
+137,3,8,3,2,IBU High Brown ABV High Atten Medium
+138,3,11,2,3,IBU High Black ABV Medium Atten High
+139,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+140,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+141,3,11,2,3,IBU High Black ABV Medium Atten High
+142,1,2,1,3,IBU Low Straw ABV Low Atten High
+143,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+144,3,11,3,3,IBU High Black ABV High Atten High
+145,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+146,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+147,2,12,1,2,IBU Medium Amber Brown ABV Low Atten Medium
+148,3,10,3,3,IBU High Deep Brown ABV High Atten High
+149,1,12,2,2,IBU Low Undefined ABV Medium Atten Medium
+150,3,11,2,2,IBU High Black ABV Medium Atten Medium
+151,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
+152,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+153,3,3,1,3,IBU High Pale Gold ABV Low Atten High
+154,2,4,1,2,IBU Medium Deep Gold ABV Low Atten Medium
+155,3,11,2,2,IBU High Black ABV Medium Atten Medium
+156,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+157,2,10,1,2,IBU Medium Deep Brown ABV Low Atten Medium
+158,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+159,3,11,3,2,IBU High Black ABV High Atten Medium
+160,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+161,3,11,2,3,IBU High Black ABV Medium Atten High
+162,2,4,1,2,IBU Medium Deep Gold ABV Low Atten Medium
+163,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
+164,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+165,3,10,2,2,IBU High Deep Brown ABV Medium Atten Medium
+166,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+167,3,11,1,2,IBU High Black ABV Low Atten Medium
+168,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+169,3,12,2,2,IBU High Undefined ABV Medium Atten Medium
+170,3,12,2,3,IBU High Amber Brown ABV Medium Atten High
+171,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+172,3,4,1,2,IBU High Deep Gold ABV Low Atten Medium
+173,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+174,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+175,3,11,2,2,IBU High Black ABV Medium Atten Medium
+176,3,10,1,3,IBU High Deep Brown ABV Low Atten High
+177,3,11,3,3,IBU High Black ABV High Atten High
+178,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+179,3,8,1,2,IBU High Brown ABV Low Atten Medium
+180,2,4,1,2,IBU Medium Deep Gold ABV Low Atten Medium
+181,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+182,2,9,1,1,IBU Medium Ruby Brown ABV Low Atten Low
+183,2,6,1,2,IBU Medium Medium Amber ABV Low Atten Medium
+184,3,7,1,3,IBU High Deep Amber ABV Low Atten High
+185,3,11,3,3,IBU High Black ABV High Atten High
+186,3,8,1,2,IBU High Brown ABV Low Atten Medium
+187,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+188,3,11,2,3,IBU High Black ABV Medium Atten High
+189,3,11,2,2,IBU High Black ABV Medium Atten Medium
+190,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+191,3,10,1,2,IBU High Deep Brown ABV Low Atten Medium
+192,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+193,1,4,1,3,IBU Low Deep Gold ABV Low Atten High
+194,3,8,1,2,IBU High Brown ABV Low Atten Medium
+195,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+196,3,11,1,2,IBU High Black ABV Low Atten Medium
+197,3,8,1,2,IBU High Brown ABV Low Atten Medium
+198,1,5,2,1,IBU Low Pale Amber ABV Medium Atten Low
+199,3,11,1,2,IBU High Black ABV Low Atten Medium
+200,3,8,1,3,IBU High Brown ABV Low Atten High
+201,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+202,3,11,2,3,IBU High Black ABV Medium Atten High
+203,3,8,2,3,IBU High Brown ABV Medium Atten High
+204,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+205,3,12,1,2,IBU High Undefined ABV Low Atten Medium
+206,3,5,2,3,IBU High Pale Amber ABV Medium Atten High
+207,1,10,1,2,IBU Low Deep Brown ABV Low Atten Medium
+208,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+209,3,11,1,2,IBU High Black ABV Low Atten Medium
+210,2,11,1,2,IBU Medium Black ABV Low Atten Medium
+211,3,11,1,1,IBU High Black ABV Low Atten Low
+212,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+213,3,12,1,2,IBU High Amber Brown ABV Low Atten Medium
+214,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+215,3,11,1,2,IBU High Black ABV Low Atten Medium
+216,3,11,2,2,IBU High Black ABV Medium Atten Medium
+217,3,10,2,3,IBU High Deep Brown ABV Medium Atten High
+218,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+219,3,7,2,3,IBU High Deep Amber ABV Medium Atten High
+220,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+221,1,2,1,2,IBU Low Straw ABV Low Atten Medium
+222,3,11,3,3,IBU High Black ABV High Atten High
+223,2,4,1,2,IBU Medium Deep Gold ABV Low Atten Medium
+224,1,10,2,2,IBU Low Deep Brown ABV Medium Atten Medium
+225,3,11,2,3,IBU High Black ABV Medium Atten High
+226,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+227,3,11,2,2,IBU High Black ABV Medium Atten Medium
+228,1,5,1,2,IBU Low Pale Amber ABV Low Atten Medium
+229,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+230,3,11,1,3,IBU High Black ABV Low Atten High
+231,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+232,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+233,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+234,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+235,3,11,2,3,IBU High Black ABV Medium Atten High
+236,3,11,1,2,IBU High Black ABV Low Atten Medium
+237,3,3,1,2,IBU High Pale Gold ABV Low Atten Medium
+238,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+239,3,5,2,3,IBU High Pale Amber ABV Medium Atten High
+240,1,12,1,2,IBU Low Amber Brown ABV Low Atten Medium
+241,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+242,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+243,1,3,1,2,IBU Low Pale Gold ABV Low Atten Medium
+244,3,11,2,3,IBU High Black ABV Medium Atten High
+245,3,10,1,3,IBU High Deep Brown ABV Low Atten High
+246,3,7,1,2,IBU High Deep Amber ABV Low Atten Medium
+247,3,11,1,3,IBU High Black ABV Low Atten High
+248,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+249,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+250,3,12,1,3,IBU High Amber Brown ABV Low Atten High
+251,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+252,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+253,2,9,1,2,IBU Medium Ruby Brown ABV Low Atten Medium
+254,2,6,1,2,IBU Medium Medium Amber ABV Low Atten Medium
+255,3,7,2,3,IBU High Deep Amber ABV Medium Atten High
+256,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+257,3,11,1,2,IBU High Black ABV Low Atten Medium
+258,3,11,2,3,IBU High Black ABV Medium Atten High
+259,2,11,1,2,IBU Medium Black ABV Low Atten Medium
+260,3,6,1,2,IBU High Medium Amber ABV Low Atten Medium
+261,3,11,1,2,IBU High Black ABV Low Atten Medium
+262,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+263,3,3,1,3,IBU High Pale Gold ABV Low Atten High
+264,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+265,3,4,1,2,IBU High Deep Gold ABV Low Atten Medium
+266,1,3,1,2,IBU Low Pale Gold ABV Low Atten Medium
+267,3,11,2,3,IBU High Black ABV Medium Atten High
+268,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+269,2,6,1,3,IBU Medium Medium Amber ABV Low Atten High
+270,3,5,1,2,IBU High Pale Amber ABV Low Atten Medium
+271,1,4,1,2,IBU Low Deep Gold ABV Low Atten Medium
+272,1,3,1,3,IBU Low Pale Gold ABV Low Atten High
+273,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+274,3,11,1,2,IBU High Black ABV Low Atten Medium
+275,1,3,1,3,IBU Low Pale Gold ABV Low Atten High
+276,2,6,1,3,IBU Medium Medium Amber ABV Low Atten High
+277,1,4,1,2,IBU Low Deep Gold ABV Low Atten Medium
+278,3,11,2,3,IBU High Black ABV Medium Atten High
+279,3,10,1,2,IBU High Deep Brown ABV Low Atten Medium
+280,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
+281,3,9,2,2,IBU High Ruby Brown ABV Medium Atten Medium
+282,1,5,1,3,IBU Low Pale Amber ABV Low Atten High
+283,3,11,2,3,IBU High Black ABV Medium Atten High
+284,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+285,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+286,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+287,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+288,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+289,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+290,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+291,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+292,3,5,1,3,IBU High Pale Amber ABV Low Atten High
+293,3,11,2,2,IBU High Black ABV Medium Atten Medium
+294,1,6,1,3,IBU Low Medium Amber ABV Low Atten High
+295,2,11,2,2,IBU Medium Black ABV Medium Atten Medium
+296,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+297,1,6,1,2,IBU Low Medium Amber ABV Low Atten Medium
+298,3,11,2,3,IBU High Black ABV Medium Atten High
+299,1,3,1,1,IBU Low Pale Gold ABV Low Atten Low
+300,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+301,2,2,1,3,IBU Medium Straw ABV Low Atten High
+302,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+303,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+304,3,8,1,3,IBU High Brown ABV Low Atten High
+305,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+306,2,11,2,3,IBU Medium Black ABV Medium Atten High
+307,2,11,1,3,IBU Medium Black ABV Low Atten High
+308,2,11,2,2,IBU Medium Black ABV Medium Atten Medium
+309,3,11,2,3,IBU High Black ABV Medium Atten High
+310,2,6,1,2,IBU Medium Medium Amber ABV Low Atten Medium
+311,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+312,3,11,3,3,IBU High Black ABV High Atten High
+313,3,11,2,2,IBU High Black ABV Medium Atten Medium
+314,1,4,1,3,IBU Low Deep Gold ABV Low Atten High
+315,3,11,1,2,IBU High Black ABV Low Atten Medium
+316,2,7,1,2,IBU Medium Deep Amber ABV Low Atten Medium
+317,3,8,2,2,IBU High Brown ABV Medium Atten Medium
+318,3,4,1,3,IBU High Deep Gold ABV Low Atten High
+319,2,10,1,3,IBU Medium Deep Brown ABV Low Atten High
+320,1,6,1,3,IBU Low Medium Amber ABV Low Atten High
+321,2,5,1,2,IBU Medium Pale Amber ABV Low Atten Medium
+322,3,6,1,3,IBU High Medium Amber ABV Low Atten High
+323,2,5,1,3,IBU Medium Pale Amber ABV Low Atten High
+324,2,4,1,3,IBU Medium Deep Gold ABV Low Atten High
+325,2,2,1,3,IBU Medium Straw ABV Low Atten High
+>>>>>>> 72f08150c98ec141fb0bc3a7990c3ad39d226fb9
