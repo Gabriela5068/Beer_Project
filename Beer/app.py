@@ -5,33 +5,59 @@ from sqlalchemy.orm import Session
 from flask import (
     Flask,
     render_template,
-    jsonify)
+    redirect,
+    jsonify,
+    request)
 from flask_sqlalchemy import SQLAlchemy
+from keras.models import load_model
+import tensorflow as tf
+from sklearn import preprocessing
+import numpy as np
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/beerdata.sqlite"
-db = SQLAlchemy(app)
-Base = automap_base()
-Base.prepare(db.engine, reflect=True)
-for t in Base.classes:
-    print(t)
-beerdata = Base.classes.finaldata
-@app.before_first_request
-def setup():
-    # Recreate database each time for demo
-    db.drop_all()
-    db.create_all()
+  
 
 @app.route("/")
 def home():
     return render_template("index.html")
 
-@app.route("/ibu")
-def editionName():
-    """Return a list of all unique ibu categories"""
-    query = db.session.query(beerdata.ibu_category.distinct().label("ibu_category"))
-    ibu_category = [row.ibu_category for row in query.all()]
-    # Return a list of the column names (sample names)
-    return jsonify(list(ibu_category))
+userinput = []
+model = tf.keras.models.load_model('decision_tree_model.h5')
+@app.route("/response", methods=["POST"])
+def response():
+    abv = request.form.get("abv")
+    ibu = request.form.get("ibu")
+    mfeel = request.form.get("mfeel")
+    color = request.form.get("color")
+    if not abv and not ibu and not mfeel or not color:
+        return "failure to input a response to all four categories"
+    userinput.append(f"{abv}, {ibu}, {mfeel}, {color}")
+    modelinput = jsonify(userinput)
+    #print (modelinput)
+    modelinput = np.asarray(modelinput)
+    response = model.predict(modelinput)
+    return jsonify(response)
+
+# @app.route("/ibu")
+# def editionName():
+#     """Return a list of all unique ibu categories"""
+#     query = db.session.query(beerdata.ibu_category.distinct().label("ibu_category"))
+#     ibu_category = [row.ibu_category for row in query.all()]
+#     # Return a list of the column names (sample names)
+#     return jsonify(list(ibu_category))
+
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/beerdata.sqlite"
+# db = SQLAlchemy(app)
+# Base = automap_base()
+# Base.prepare(db.engine, reflect=True)
+# for t in Base.classes:
+#     print(t)
+# beerdata = Base.classes.finaldata
+# @app.before_first_request
+# def setup():
+#     # Recreate database each time for demo
+#     db.drop_all()
+#     db.create_all()
 
 
 if __name__ == "__main__":

@@ -1,56 +1,56 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Beer Recommendation Engine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Beer Recommendation Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  <div class="wrapper">
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Beer Recommendation Engine
-            <img class="nav" src="../static/images/barrel.svg">
-          </a>
-          <button class="navbar-toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <img src="../static/images/navbutton.png" alt="navbutton" height="40">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=".html">How the Engine Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=".html">About Us</a>
-              </li>
-            </ul>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Beer Recommendation Engine
+              <img class="nav" src="../static/images/barrel.svg">
+            </a>
+            <button class="navbar-toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <img src="../static/images/navbutton.png" alt="navbutton" height="40">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=".html">How the Engine Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=".html">About Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
 
-      </div>
-    </nav>
-    <div class="hero text-center">
+ <div class="hero text-center">
       <h1>What to drink next?</h1>
       <p>The Best is Out There</p>
     </div>
@@ -63,7 +63,8 @@
       </div>
     </div>
 
-    <form id="form" method="post" target="_blank" onclick=window.open(/processing.html)> <div class="container">
+    <form id="form" target="_blank" action="/response" method="POST"> 
+      <div class="container">
       <div class="row margin-top-50">
         <h2>1. Preference of Alcoholic Content</h2>
       </div>
@@ -95,17 +96,17 @@
     <div class="row">
       <div class="choicetext">
         <div class="col-12">
-          <INPUT TYPE="checkbox" class="ibu" size="500" value="4"> Aggressive </input>
+          <INPUT TYPE="checkbox" class="ibu" name="ibu" size="500" value="1"> Aggressive </input>
           <br>
           <img src="../static/images/aggressive.jfif" alt="aggressive" />
         </div>
         <div class="col-12">
-          <INPUT TYPE="checkbox" class="ibu" size="500" value="5"> Moderate</input>
+          <INPUT TYPE="checkbox" class="ibu" name="ibu" size="500" value="2"> Moderate</input>
           <br>
           <img src="../static/images/moderate.png" alt="moderate" />
         </div>
         <div class="col-12">
-          <INPUT TYPE="checkbox" class="ibu" size="500" value="6"> Restrained </input>
+          <INPUT TYPE="checkbox" class="ibu" name="ibu" size="500" value="3"> Restrained </input>
           <br>
           <img src="../static/images/restrained.png" alt="restrained" />
         </div>
@@ -120,17 +121,17 @@
     <div class="row">
       <div class="choicetext">
         <div class="col-4">
-          <INPUT TYPE="checkbox" class="mfeel" size="500" value="7"> Velvety </input>
+          <INPUT TYPE="checkbox" class="mfeel" name="mfeel" size="500" value="1"> Velvety </input>
           <br>
           <img src="../static/images/velvety.jfif" alt="aggressive" />
         </div>
         <div class="col-4">
-          <INPUT TYPE="checkbox" class="mfeel" size="500" value="8"> Full </input>
+          <INPUT TYPE="checkbox" class="mfeel" name="mfeel" size="500" value="2"> Full </input>
           <br>
           <img src="../static/images/full.jfif" alt="moderate" />
         </div>
         <div class="col-4">
-          <INPUT TYPE="checkbox" class="mfeel" size="500" value="9"> Dry </input>
+          <INPUT TYPE="checkbox" class="mfeel" name="mfeel" size="500" value="3"> Dry </input>
           <br>
           <img src="../static/images/dry.jfif" alt="restrained" />
         </div>
@@ -154,62 +155,62 @@
           </thead>
           <tbody>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="10"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="1"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#ffff45;"></div> </td>
               <td> Pale Straw</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="11"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="2"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#ffe93e;"></div> </td>
               <td> Straw</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="12"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="3"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#fed849;"></div> </td>
               <td> Pale Gold</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="13"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="4"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#ffa846;"></div> </td>
               <td> Deep Gold</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="14"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="5"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#f49f44;"></div> </td>
               <td> Pale Amber</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="15"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="6"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#d77f59;"></div> </td>
               <td> Medium Amber</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="16"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="7"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#94523a;"></div> </td>
               <td> Deep Amber</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="17"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="8"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#804541;"></div> </td>
               <td> Amber Brown</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="18"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="9"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#5b342f;"></div> </td>
               <td> Brown</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="19"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="10"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#4c3b2b;"></div> </td>
               <td> Ruby Brown</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="20"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="11"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#38302e;"></div> </td>
               <td> Deep Brown</td>
             </tr>
             <tr>
-              <td> <INPUT TYPE="checkbox" class="color" size="500" value="21"> </input> </td>
+              <td> <INPUT TYPE="checkbox" class="color" name="color" size="500" value="12"> </input> </td>
               <td> <div style= "width: 40px; height: 40px; background-color:#31302c;"></div> </td>
               <td> Black</td>
             </tr>
@@ -238,6 +239,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="../static/js/data.js"></script>
   <script src="../static/js/app.js"></script>
-</body>
+
+    </div>
+    </body>
 
 </html>
