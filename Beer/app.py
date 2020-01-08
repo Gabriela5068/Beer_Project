@@ -23,20 +23,22 @@ def home():
 
 userinput = []
 model = tf.keras.models.load_model('decision_tree_model.h5')
-@app.route("/response", methods=["POST"])
+@app.route("/response", methods=["GET", "POST"])
 def response():
-    abv = request.form.get("abv")
-    ibu = request.form.get("ibu")
-    mfeel = request.form.get("mfeel")
-    color = request.form.get("color")
-    if not abv and not ibu and not mfeel or not color:
-        return "failure to input a response to all four categories"
-    userinput.append(f"{abv}, {ibu}, {mfeel}, {color}")
-    modelinput = jsonify(userinput)
-    #print (modelinput)
-    modelinput = np.asarray(modelinput)
-    response = model.predict(modelinput)
-    return jsonify(response)
+    if request.method == "POST":
+        abv = request.form.get("abv")
+        ibu = request.form.get("ibu")
+        mfeel = request.form.get("mfeel")
+        color = request.form.get("color")
+        if not abv and not ibu and not mfeel or not color:
+            return "failure to input a response to all four categories"
+        print(f"{abv}, {ibu}, {mfeel}, {color}")
+        modelinput = np.array([[int(ibu), int(color), int(abv), int(mfeel)]])
+        #np.array([int(s) for s in modelinput.split(',')]).reshape((4,1))
+        response = model.predict_classes(modelinput)
+        print(f"the prediction {response}")
+        return {"predicted_class": str(response[0])}
+    return render_template("index.html")
 
 # @app.route("/ibu")
 # def editionName():
