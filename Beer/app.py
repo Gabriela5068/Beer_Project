@@ -15,8 +15,25 @@ from sklearn import preprocessing
 import numpy as np
 
 app = Flask(__name__)
-  
 
+# Database Set Up
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/beerdata.sqlite"
+db = SQLAlchemy(app)
+
+Base = automap_base()
+Base.prepare(db.engine, reflect=True)
+
+# for t in Base.classes:
+#     print(t)
+
+beerdata = Base.classes.finaldata
+# @app.before_first_request
+# def setup():
+#     # Recreate database each time for demo
+#     db.drop_all()
+#     db.create_all()
+
+# Home Route
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -32,34 +49,50 @@ def response():
         color = request.form.get("color")
         if not abv and not ibu and not mfeel or not color:
             return "failure to input a response to all four categories"
-        print(f"{abv}, {ibu}, {mfeel}, {color}")
+        print(f"user input: {abv}, {ibu}, {mfeel}, {color}")
         modelinput = np.array([[int(ibu), int(color), int(abv), int(mfeel)]])
-        #np.array([int(s) for s in modelinput.split(',')]).reshape((4,1))
         response = model.predict_classes(modelinput)
-        print(f"the prediction {response}")
-        return {"predicted_class": str(response[0])}
+        print(f"the prediction class {response[0]}")
+        modelresponse = str(response[0])
+        userinput.append(modelresponse)
+        return render_template("results.html")
     return render_template("index.html")
 
-# @app.route("/ibu")
-# def editionName():
-#     """Return a list of all unique ibu categories"""
-#     query = db.session.query(beerdata.ibu_category.distinct().label("ibu_category"))
-#     ibu_category = [row.ibu_category for row in query.all()]
-#     # Return a list of the column names (sample names)
-#     return jsonify(list(ibu_category))
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/beerdata.sqlite"
-# db = SQLAlchemy(app)
-# Base = automap_base()
-# Base.prepare(db.engine, reflect=True)
-# for t in Base.classes:
-#     print(t)
-# beerdata = Base.classes.finaldata
-# @app.before_first_request
-# def setup():
-#     # Recreate database each time for demo
-#     db.drop_all()
-#     db.create_all()
+@app.route("/beerinfo", methods=["GET"])
+def beerinfo():
+    sel = [
+        beerdata.name,
+        beerdata.ibu,
+        beerdata.srm_category,
+        beerdata.abv,
+        beerdata.attenuation_level,
+        beerdata.tagline,
+        beerdata.food_pairing
+    ]
+
+    qr = db.session.query(*sel).filter(beerdata.ai_prediction == str(userinput[0])).all()
+    print(qr)
+
+    name = [result[0] for result in qr]
+    ibu = [result[1] for result in qr]
+    color = [result[2] for result in qr]
+    abv = [result[3] for result in qr]
+    attenuation_level = [result[4] for result in qr]
+    tagline = [result[5] for result in qr]
+    food_pairings = [result[6] for result in qr]
+
+    beers = [{
+        "name": name,
+        "ibu": ibu,
+        "color":color,
+        "abv":abv,
+        "attenuation_level": attenuation_level,
+        "tagline":tagline,
+        "food_pairings": food_pairings
+    }]
+    print(beers)
+    return jsonify(beers)
 
 
 if __name__ == "__main__":

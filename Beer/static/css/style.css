@@ -18,6 +18,83 @@ body {
   overflow: auto;
 }
 
+ #contentbox{
+  position: absolute;
+  top:700px;
+  right:-200px;
+  /* width: 1200px;
+  height: 300px;
+  top:8000;
+  margin: 0 px; */
+  font-family: sans-serif
+}
+
+
+#contentbox .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  float: left;
+  background:#9ACD32;
+  margin: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius:10px;
+
+}
+
+#contentbox .box .icon{
+  position: absolute;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  width: 100%;
+  height: 100%;
+  /* transition:0.2s; */
+  z-index:1;
+  background:#2F4F4F;
+
+}
+
+#contentbox .box:hover .icon{
+  top: 20px;
+  right: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+}
+
+#contentbox .box .icon .fa{
+  position: absolute;
+  /* top:50%;
+  left:50%; */
+  transform: translate(150%,100%);
+  font-size:80px;
+  /* transition:0.2s; */
+  color:white;
+}
+
+#contentbox .box:hover .icon .fa {
+  font-size: 40px;
+  color:black;
+}
+
+.content {
+  position: absolute;
+  top:100px;
+  height: calc(100%-100px);
+  padding: 20px;
+  box-sizing: border-box;
+  /* transition:0.2s; */
+}
+
+.box:hover .content {
+  position: relativeS;
+  height: calc(100%-100px);
+  padding: 0px;
+  /* transition:0.2s; */
+  color:black;
+}
+
 /* The footer is positioned at the bottom of the page */
 .footer {
   position: absolute;
@@ -80,6 +157,19 @@ input[type=checkbox] {
   font-size: 25px;
 }
 
+.decisiontree {
+  width:1200px;
+  height:200px;
+}
+
+/* .decisiontree:hover {
+  transform:scale(4.5);
+} */
+
+.center {
+  text-align:center;
+}
+
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
@@ -126,6 +216,7 @@ select {
   position: relative;
   height: 550px;
   padding: 20px;
+  width:100%;
   margin: 0;
   background: black;
   background-image: url("../images/pouring.jpeg");
@@ -167,59 +258,6 @@ select {
 .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #8e979f;
-}
-
-/* media queries which will only be activated at specific screen sizes */
-@media (max-width: 800px) {
-  #table-area td {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 500px) {
-  #table-area thead {
-    display: none;
-  }
-
-  #table-area tr td:first-child {
-    font-size: 1.8em;
-    font-weight: bold;
-    background: #1b3146;
-  }
-
-  #table-area tr td:last-child {
-    margin-bottom: 20px;
-  }
-
-  #table-area tr td:last-child::after {
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 20px;
-    content: " ";
-    background: aliceblue;
-  }
-
-  #table-area td {
-    font-size: 1.25em;
-  }
-
-  #table-area tbody td {
-    display: block;
-    text-align: center;
-  }
-
-  #table-area tbody td::before {
-    display: block;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
-    content: attr(data-th);
-  }
-
-  .hero h1 {
-    animation: smaller-title 1.2s forwards linear;
-  }
 }
 
 /* keyframe animations which will be used to animate the title */
