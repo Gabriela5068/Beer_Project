@@ -22,7 +22,7 @@ def home():
     return render_template("index.html")
 
 userinput = []
-model = tf.keras.models.load_model('decision_tree_model.h5')
+model = tf.keras.models.load_model('decision_tree_classifier_20200107.pkl')
 @app.route("/response", methods=["GET", "POST"])
 def response():
     if request.method == "POST":
