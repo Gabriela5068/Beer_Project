@@ -26,6 +26,7 @@ body {
   height: 300px;
   top:8000;
   margin: 0 px; */
+  
   font-family: sans-serif
 }
 
@@ -223,7 +224,7 @@ select {
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
-  color: white;
+  color: tomato;
 }
 
 .hero h1 {
@@ -234,10 +235,16 @@ select {
 
 .hero p {
   font-size: 2rem;
+  font-weight: bold;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
 }
+
+.nav-link {
+  color: white;
+}
+
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
