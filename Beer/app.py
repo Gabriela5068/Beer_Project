@@ -13,7 +13,7 @@ from keras.models import load_model
 import tensorflow as tf
 from sklearn import preprocessing
 import numpy as np
-import pickle 
+import pickle
 
 app = Flask(__name__)
 
@@ -34,6 +34,7 @@ beerdata = Base.classes.applicationdata2
 def home():
     return render_template("index.html")
 
+
 model = pickle.load(open('decision_tree_classifier_20200107.pkl', 'rb'))
 @app.route("/response", methods=["GET", "POST"])
 def response():
@@ -44,18 +45,21 @@ def response():
         color = request.form.get("color")
         if not abv and not ibu and not mfeel or not color:
             return "failure to input a response to all four categories"
-        print(f"user input: {abv}, {ibu}, {mfeel}, {color}")
+        print(f"user input: {ibu}, {color}, {abv}, {mfeel}")
         modelinput = np.array([[int(ibu), int(color), int(abv), int(mfeel)]])
         response = model.predict(modelinput)
         print(f"the prediction class {response[0]}")
         modelresponse = response[0]
-       
+        print(modelresponse)
+        # beerinfo(modelresponse)
         return render_template("results.html", id=modelresponse)
     return render_template("index.html")
 
 
 # TODO put the route back here
-def beerinfo(modelresponse):
+@app.route("/beerinfo/<id>", methods=["GET"])
+def beerinfo(id):
+    print(f"beerinfo print fun {id}")
     sel = [
         beerdata.name,
         beerdata.ibu,
@@ -66,31 +70,23 @@ def beerinfo(modelresponse):
         beerdata.food_pairing,
         beerdata.outcome
     ]
-    print("above qr")
-    qr = db.session.query(*sel).filter(beerdata.outcome == str(modelresponse)).all()
-    print(f"query:{qr}")
+    qr = db.session.query(*sel).filter(beerdata.outcome == str(id)).all()
     print(f"we have {len(qr)} results")
 
-    name = [result[0] for result in qr]
-    ibu = [result[1] for result in qr]
-    color = [result[2] for result in qr]
-    abv = [result[3] for result in qr]
-    attenuation_level = [result[4] for result in qr]
-    tagline = [result[5] for result in qr]
-    food_pairings = [result[6] for result in qr]
+    beers = []
+    for result in qr:
+        beer = {}
+        beer['name'] = result[0]
+        beer['ibu'] = result[1]
+        beer['color'] = result[2]
+        beer['abv'] = result[3]
+        beer['attenuation_level'] = result[4]
+        beer['tagline'] = result[5]
+        beer['food_pairings'] = result[6]
+        beers.append(beer)
 
-    beers = [{
-        "name": name,
-        "ibu": ibu,
-        "color":color,
-        "abv":abv,
-        "attenuation_level": attenuation_level,
-        "tagline":tagline,
-        "food_pairings": food_pairings
-    }]
-    return [{"name": 1}, {"name": 2}]
+    return jsonify(beers)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
