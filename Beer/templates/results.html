@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Beer Recommendation Engine Results</title>
+  <title>Beer Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -66,40 +66,36 @@
       </div>
     </div>
 
-    
 
-      <div class="container">
-        <div class="row margin-top-50">
-          <h2>Results table goes here </h2>
-        </div>
-        <div class="row">
-          <div class="choicetext">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Beer</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-              
-                <tr>
-                  <td>
-                    {{ id }}
-                  </td>
-                </tr>
-                 
-           
-               
-              </tbody>
 
-            </table>
-          </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <h2>Results </h2>
+      </div>
+      <div class="row">
+        <div class="choicetext">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>IBU</th>
+                <th>Color</th>
+                <th>ABV</th>
+                <th>Attenuation Level</th>
+                <th>Tagline</th>
+                <th>Food Pairings</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+          </table>
         </div>
       </div>
+    </div>
 
-      
+
     </form>
 
 
@@ -111,10 +107,10 @@
   <script src="../static/js/data.js"></script>
   <script src="../static/js/app.js"></script>
   <script>
-  
+
     var id = "{{ id }}";
-    console.log(`MY ID ${id}`)
-  
+    domyfunction(id)
+
   </script>
 
   </div>

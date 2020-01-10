@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Beer Recommendation Engine Results</title>
+    <title>Engine Results</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,7 +41,10 @@
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=".html">How the Engine Works</a>
+                                <a class="nav-link" href="engine.html">How the Engine Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="brewing.html">Parameters Explained</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href=".html">About Us</a>
@@ -67,30 +70,31 @@
                     <br>
                 </div>
                 <div class="col-md-12">
-                    <h2>Superised Learning Model</h2>
-                    <p>In this case, this engine uses supervised learning. This means that the algorithm uses example
+                    <h2>Supervised Learning Model</h2>
+                    <p>In this case, the engine uses supervised learning. This means that the algorithm uses example
                         data to build classes so that it can later predict the correct class when a new example is
                         introduced.
-                        The example data was obtained from a database that “xxx”
-                        The data was divided where 80% was used to train the model and 20% to test the model.
+                        The example data was obtained from a publicly availble database of microbrew information.
+                        The data was divided with 75% used to train the model and 25% to test the model.
+
                     </p>
                     <br>
                 </div>
                 <div class="col-md-12">
                     <h2>Decision Tree Model</h2>
-                    <p>The model took into account the following parameters: “abu, attenuation level, ”
+                    <p>The model took into account the following parameters: abv, ibu, attenuation level, and srm
+                        (color).
                         The model is built as a decision tree in which the input will be evaluated against the
                         categories created for the four parameters and ultimately lead to a final result or prediction
                         of the best beers.
                     </p>
-                    <img class=decisiontree src="../static/images/decision_tree.png" alt="decisiontree" />
+                    <img class=decisiontree src="../static/images/decision_tree.png" onclick="window.open('../static/images/decision_tree.png', '_blank')" onmouseover="" style="cursor: pointer" alt="decisiontree" />
                     <br>
                 </div>
                 <div class="col-md-12">
                     <div class="row margin-top-50"></div>
                     <h2>Evaluate Model</h2>
-                    <p>The model was evaluated using the following statistical parameter “XXX”
-                        The accuracy of this model is:
+                    <p>The accuracy of this model is: 91%
                     </p>
                     <br>
                 </div>
