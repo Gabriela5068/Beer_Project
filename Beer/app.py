@@ -9,8 +9,8 @@ from flask import (
     jsonify,
     request)
 from flask_sqlalchemy import SQLAlchemy
-from keras.models import load_model
-import tensorflow as tf
+# from keras.models import load_model
+# import tensorflow as tf
 from sklearn import preprocessing
 import numpy as np
 import pickle
