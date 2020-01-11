@@ -42,7 +42,12 @@ def engine():
 def brewing():
     return render_template("brewing.html")
 
-model = pickle.load(open('Beer/decision_tree_classifier_20200107.pkl', 'rb'))
+# this line active for heroku
+# model = pickle.load(open('Beer/decision_tree_classifier_20200107.pkl', 'rb'))
+
+# this line active for running local
+model = pickle.load(open('decision_tree_classifier_20200107.pkl', 'rb'))
+
 @app.route("/response", methods=["GET", "POST"])
 def response():
     if request.method == "POST":
