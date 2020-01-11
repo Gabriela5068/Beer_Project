@@ -34,6 +34,13 @@ beerdata = Base.classes.applicationdata2
 def home():
     return render_template("index.html")
 
+@app.route("/engine.html")
+def engine():
+    return render_template("engine.html")
+
+@app.route("/brewing.html")
+def brewing():
+    return render_template("brewing.html")
 
 model = pickle.load(open('decision_tree_classifier_20200107.pkl', 'rb'))
 @app.route("/response", methods=["GET", "POST"])
